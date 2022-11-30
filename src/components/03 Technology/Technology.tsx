@@ -10,9 +10,9 @@ const Technology = () => {
           <p>mini nav menu</p>
         </div>
         <div className="technology-description">
-          <h1>crew[i].role</h1>
-          <p>crew[i].name</p>
-          <p>crew[i].bio</p>
+          <p>THE TERMINOLOGY...</p>
+          <h1>technology[i].name</h1>
+          <p>technology[i].description</p>
         </div>
       </div>
       <div className="technology-img">
