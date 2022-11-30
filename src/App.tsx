@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, FC, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import siteData from './data/siteData.json'
+import data from './data/siteData.json'
 import './App.css';
 
-function App() {
 
-  const [data, setData] = useState(siteData);
+
+const App: FC = () => {
+
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar 
+        destinations={data.destinations} 
+        crew={data.crew} 
+        technology={data.technology}
+      />
     </div>
   );
 }
