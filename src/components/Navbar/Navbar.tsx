@@ -1,9 +1,32 @@
-import React from "react";
+import React, { FC, useEffect } from "react";
 import AppRouter from "./AppRouter"
 import "./Navbar.css";
 
+interface Props {
+  destinations: { 
+    name: string; 
+    images: { png: string; webp: string; }; 
+    description: string; 
+    distance: string; 
+    travel: string; 
+  }[]; 
+  crew: { 
+    name: string; 
+    images: { png: string; webp: string; }; 
+    role: string; bio: string; 
+  }[]; 
+  technology: { 
+    name: string; 
+    images: { portrait: string; landscape: string; }; 
+    description: string;
+  }[];
+};
 
-const Navbar = () => {
+const Navbar: FC<Props> = ({ destinations, crew, technology }) => {
+
+  useEffect(() => {
+    console.log(destinations, crew, technology)
+  })
   return (
     <div>
       <p>Navbar Component</p>
