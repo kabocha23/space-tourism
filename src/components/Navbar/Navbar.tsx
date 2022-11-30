@@ -1,32 +1,11 @@
 import React, { FC, useEffect } from "react";
 import AppRouter from "./AppRouter"
+import data from '../../data/siteData.json'
 import "./Navbar.css";
 
-interface Props {
-  destinations: { 
-    name: string; 
-    images: { png: string; webp: string; }; 
-    description: string; 
-    distance: string; 
-    travel: string; 
-  }[]; 
-  crew: { 
-    name: string; 
-    images: { png: string; webp: string; }; 
-    role: string; bio: string; 
-  }[]; 
-  technology: { 
-    name: string; 
-    images: { portrait: string; landscape: string; }; 
-    description: string;
-  }[];
-};
 
-const Navbar: FC<Props> = ({ destinations, crew, technology }) => {
+const Navbar: FC = () => {
 
-  useEffect(() => {
-    console.log(destinations, crew, technology)
-  })
   return (
     <div>
       <p>Navbar Component</p>
@@ -36,7 +15,11 @@ const Navbar: FC<Props> = ({ destinations, crew, technology }) => {
         <li><a href="http://localhost:3000/crew">02 Crew</a></li>
         <li><a href="http://localhost:3000/technology">03 Technology</a></li>
       </ul>
-      <AppRouter />
+      <AppRouter 
+        destinations={data.destinations} 
+        crew={data.crew} 
+        technology={data.technology}
+      />
     </div>
   );
 };
