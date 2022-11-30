@@ -1,17 +1,14 @@
-import React from 'react';
-import Home from './components/00 Home/Home';
-import Destination from './components/01 Destination/Destination';
-import Crew from './components/02 Crew/Crew';
-import Technology from './components/03 Technology/Technology';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import siteData from './data/siteData.json'
 import './App.css';
 
 function App() {
+
+  const [data, setData] = useState(siteData);
   return (
-    <div className="App">
-      <Home />
-      <Destination />
-      <Crew />
-      <Technology />
+    <div className='App'>
+      <Navbar />
     </div>
   );
 }
