@@ -1,7 +1,16 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Crew.css";
 
-const Crew = () => {
+interface CrewProps {
+  crew: {
+    name: string;
+    images: { png: string; webp: string; };
+    role: string;
+    bio: string;
+  }[];
+}
+
+const Crew: FC<CrewProps> = ({ crew }) => {
   return (
     <div className="crew-container">
       <div className="crew-blurb">      

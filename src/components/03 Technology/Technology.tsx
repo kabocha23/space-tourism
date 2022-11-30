@@ -1,7 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Technology.css";
 
-const Technology = () => {
+interface TechnologyProps {
+  technology: {
+    name: string;
+    images: { portrait: string; landscape: string; };
+    description: string;
+  }[];
+}
+
+const Technology: FC<TechnologyProps> = ({ technology }) => {
   return (
     <div className="technology-container">
       <div className="technology-blurb">      

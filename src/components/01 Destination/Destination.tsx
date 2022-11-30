@@ -1,7 +1,21 @@
-import React from "react";
+import React, { FC, useEffect } from "react";
 import "./Destination.css";
 
-const Destination = () => {
+interface DestinationProps {
+  destinations: { 
+    name: string; 
+    images: { png: string; webp: string; }; 
+    description: string; 
+    distance: string; 
+    travel: string; 
+  }[]; 
+}
+
+const Destination: FC<DestinationProps> = ({ destinations }) => {
+
+  useEffect(() => {
+    console.log(destinations)
+  })
   return (
     <div className="destination-container">
       <div className="destination-img">      
