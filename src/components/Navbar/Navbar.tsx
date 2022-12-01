@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import AppRouter from "./AppRouter"
 import data from '../../data/siteData.json'
 import "./Navbar.css";
@@ -7,8 +7,7 @@ import "./Navbar.css";
 const Navbar: FC = () => {
 
   return (
-    <div>
-      <p>Navbar Component</p>
+    <div className="navbar-container">
       <ul>
         <li><a href="http://localhost:3000/">00 Home</a></li>
         <li><a href="http://localhost:3000/destination">01 Destination</a></li>

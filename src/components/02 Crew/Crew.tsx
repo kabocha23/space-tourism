@@ -16,9 +16,9 @@ const Crew: FC<CrewProps> = ({ crew }) => {
       <div className="crew-blurb">      
         <p><span>02</span> MEET YOUR CREW</p>
         <div className="crew-description">
-          <h1>crew[i].role</h1>
-          <p>crew[i].name</p>
-          <p>crew[i].bio</p>
+          <h1>{crew[0].role}</h1>
+          <p>{crew[0].name}</p>
+          <p>{crew[0].bio}</p>
         </div>
         <div className="crew-nav">          
           <p>mini nav menu</p>

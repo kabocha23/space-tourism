@@ -33,7 +33,7 @@ const AppRouter: FC<Props> = ({ destinations, crew, technology }) => {
             <Route path="/" element={<Home />} />
             <Route path="/destination" element={<Destination destinations={destinations}/>} />
             <Route path="/crew" element={<Crew crew={crew}/>} />
-            <Route path="/technology" element={<Technology technology={technology}/>} />
+            <Route path="/technology" element={<Technology technology={technology} />} />
         </Routes>
     </div>
   );

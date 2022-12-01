@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import "./Destination.css";
 
 interface DestinationProps {
@@ -13,9 +13,6 @@ interface DestinationProps {
 
 const Destination: FC<DestinationProps> = ({ destinations }) => {
 
-  useEffect(() => {
-    console.log(destinations)
-  })
   return (
     <div className="destination-container">
       <div className="destination-img">      
@@ -25,8 +22,8 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
       <div className="destination-blurb">
         <div className="destination-blurb-top">
           <p>mini nav menu</p>
-          <h1>destinations[i].name</h1>
-          <p>destinations[i].description</p>          
+          <h1>{destinations[0].name}</h1>
+          <p>{destinations[0].description}</p>          
         </div>
 
         <hr></hr>
@@ -34,11 +31,11 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
         <div className="destination-blurb-bottom">
           <div className="avg-distance">
             <p>AVG. DISTANCE</p>
-            <p>destinations[i].distance</p>
+            <p>{destinations[0].distance}</p>
           </div>
           <div className="est-travel-time">
             <p>EST. TRAVEL TIME</p>
-            <p>destinations[i].travel</p>
+            <p>{destinations[0].travel}</p>
           </div>
         </div>
       </div>

@@ -19,8 +19,8 @@ const Technology: FC<TechnologyProps> = ({ technology }) => {
         </div>
         <div className="technology-description">
           <p>THE TERMINOLOGY...</p>
-          <h1>technology[i].name</h1>
-          <p>technology[i].description</p>
+          <h1>{technology[0].name}</h1>
+          <p>{technology[0].description}</p>
         </div>
       </div>
       <div className="technology-img">
