@@ -1,4 +1,20 @@
 .technology-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
     background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: #FFFFFF;
+}
+
+.technology-blurb {
+    width: 50%;
+    margin-top: auto;
+}
+
+.technology-img {
+    width: 50%;
+    margin-top: auto;
 }
