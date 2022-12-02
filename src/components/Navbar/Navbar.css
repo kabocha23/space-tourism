@@ -1,0 +1,29 @@
+.navbar-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.navbar-container ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+.navbar-container ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+}
+
+.nav-bold-nums {
+    font-weight: 700;
+}

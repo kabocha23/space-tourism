@@ -1,4 +1,23 @@
 .home-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
     background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-subcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-blurb {
+    width: 50%;
+}
+.home-explore {
+    width: 50%;
 }
