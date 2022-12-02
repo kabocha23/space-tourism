@@ -13,7 +13,9 @@
     list-style: none;
 }
 
-
+.navbar-container ul li {
+    margin-left: 50px;
+}
 
 .navbar-container ul li a {
     text-decoration: none;
