@@ -6,6 +6,11 @@ import Crew from '../02 Crew/Crew';
 import Technology from '../03 Technology/Technology';
 
 interface Props {
+  home: {
+    intro: string;
+    title: string;
+    description: string;
+  };
   destinations: { 
     name: string; 
     images: { png: string; webp: string; }; 
@@ -26,11 +31,11 @@ interface Props {
   }[];
 };
 
-const AppRouter: FC<Props> = ({ destinations, crew, technology }) => {
+const AppRouter: FC<Props> = ({ home, destinations, crew, technology }) => {
   return (
     <div className="approuter-container">
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home home={home}/>} />
             <Route path="/destination" element={<Destination destinations={destinations}/>} />
             <Route path="/crew" element={<Crew crew={crew}/>} />
             <Route path="/technology" element={<Technology technology={technology} />} />

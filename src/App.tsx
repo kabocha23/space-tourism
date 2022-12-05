@@ -10,6 +10,7 @@ const App: FC = () => {
     <div className='App'>
       <Navbar />
       <AppRouter 
+        home={data.home}
         destinations={data.destinations} 
         crew={data.crew} 
         technology={data.technology}
