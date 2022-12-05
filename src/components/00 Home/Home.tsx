@@ -12,16 +12,18 @@ interface HomeProps {
 const Home: FC<HomeProps> = ({ home }) => {
   return (
     <div className="home-container">
-      <div className="home-blurb">
-        <h3>{home.intro}</h3>
-        <h1>{home.title}</h1>
-        <p>{home.description}</p>
+      <div className="home-blurb div-flex-center">
+        <p id="home-intro">{home.intro}</p>
+        <p id="home-title">{home.title}</p>
+        <p id="home-desc">{home.description}</p>
       </div>
       <div className="home-explore">
-        <button>EXPLORE</button>
+        <div className="home-explore-btn div-flex-center">
+          <button>EXPLORE</button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Home; 
