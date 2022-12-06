@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import "./Destination.css";
 
 interface DestinationProps {
@@ -8,10 +8,17 @@ interface DestinationProps {
     description: string; 
     distance: string; 
     travel: string; 
-  }[]; 
+  }[];
+  planet: number;
+  setPlanet: (planetIdx: number) => void;
 }
 
-const Destination: FC<DestinationProps> = ({ destinations }) => {
+const Destination: FC<DestinationProps> = ({ destinations, planet, setPlanet }) => {
+
+  const changePlanet = (planetIdx: number): void => {
+    setPlanet(planetIdx);
+  };
+
 
   return (
     <div className="destination-container">
@@ -19,8 +26,8 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
       <div className="destination-img">      
         <p className="heading-5"><span>01</span> PICK YOUR DESTINATION</p>
         <img 
-          src={require(`../../${destinations[0].images.png}.png`)}
-          alt={destinations[0].name}
+          src={require(`../../${destinations[`${planet}`].images.png}.png`)}
+          alt={destinations[`${planet}`].name}
           />
       </div>
 
@@ -28,13 +35,13 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
         <div className="destination-blurb-sub">
           <div className="destination-blurb-top">
             <div className="destination-nav subheading-2">
-              <p>MOON</p>
-              <p>MARS</p>
-              <p>EUROPA</p>
-              <p>TITAN</p>
+              <p onClick={() => changePlanet(0)}>MOON</p>
+              <p onClick={() => changePlanet(1)}>MARS</p>
+              <p onClick={() => changePlanet(2)}>EUROPA</p>
+              <p onClick={() => changePlanet(3)}>TITAN</p>
             </div>
-            <p className="heading-2">{destinations[0].name.toUpperCase()}</p>
-            <p className="body-text lavender">{destinations[0].description}</p>          
+            <p className="heading-2">{destinations[`${planet}`].name.toUpperCase()}</p>
+            <p className="body-text lavender">{destinations[`${planet}`].description}</p>          
           </div>
 
           <hr></hr>
@@ -42,11 +49,11 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
           <div className="destination-blurb-bottom">
             <div className="avg-distance">
               <p className="subheading-2 lavender">AVG. DISTANCE</p>
-              <p className="heading-4 white">{destinations[0].distance.toUpperCase()}</p>
+              <p className="heading-4 white">{destinations[`${planet}`].distance.toUpperCase()}</p>
             </div>
             <div className="est-travel-time">
               <p className="subheading-2 lavender">EST. TRAVEL TIME</p>
-              <p className="heading-4 white">{destinations[0].travel.toUpperCase()}</p>
+              <p className="heading-4 white">{destinations[`${planet}`].travel.toUpperCase()}</p>
             </div>
           </div>
         </div>

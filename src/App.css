@@ -15,3 +15,70 @@ body, #root {
 .approuter-container {
   height: 100%;
 }
+
+/* reusable classes */
+.div-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-1 {
+  font-size: 150px;
+  font-weight: 300;
+  font-family: 'Bellefair', serif;
+  letter-spacing: 2.5px;
+}
+.heading-2 {
+  font-size: 100px;
+  font-weight: 300;
+  font-family: 'Bellefair', serif;
+  letter-spacing: 2.5px;
+}
+.heading-3 {
+  font-size: 56px;
+  font-weight: 300;
+  font-family: 'Bellefair', serif;
+  letter-spacing: 2.5px;
+}
+.heading-4 {
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'Bellefair', serif;
+  letter-spacing: 2.5px;
+}
+.heading-5 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.75px;
+}
+.subheading-1 {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.5px;
+}
+.subheading-2 {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.35px;
+}
+.body-text {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+/* colors */
+.white {
+  color: #FFFFFF;
+}
+.black {
+  color: #0B0D17;
+}
+.lavender {
+  color: #D0D6F9;
+}

@@ -29,16 +29,36 @@ interface Props {
     images: { portrait: string; landscape: string; }; 
     description: string;
   }[];
+  planet: number;
+  setPlanet: (planetIdx: number) => void;
 };
 
-const AppRouter: FC<Props> = ({ home, destinations, crew, technology }) => {
+const AppRouter: FC<Props> = ({ home, destinations, crew, technology, planet, setPlanet }) => {
   return (
     <div className="approuter-container">
         <Routes>
-            <Route path="/" element={<Home home={home}/>} />
-            <Route path="/destination" element={<Destination destinations={destinations}/>} />
-            <Route path="/crew" element={<Crew crew={crew}/>} />
-            <Route path="/technology" element={<Technology technology={technology} />} />
+            <Route 
+              path="/" 
+              element={<Home home={home}/>} 
+            />
+            <Route 
+              path="/destination" 
+              element={
+                <Destination 
+                  destinations={destinations}
+                  planet={planet}
+                  setPlanet={setPlanet}
+                />
+              } 
+            />
+            <Route 
+              path="/crew" 
+              element={<Crew crew={crew}/>} 
+            />
+            <Route 
+              path="/technology" 
+              element={<Technology technology={technology} />} 
+            />
         </Routes>
     </div>
   );
