@@ -15,27 +15,36 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
 
   return (
     <div className="destination-container">
+
       <div className="destination-img">      
-        <p><span>01</span> PICK YOUR DESTINATION</p>
-        <img />
+        <p className="heading-5"><span>01</span> PICK YOUR DESTINATION</p>
+        <img src={require(`../../${destinations[0].images.png}.png`)}/>
       </div>
+
       <div className="destination-blurb">
-        <div className="destination-blurb-top">
-          <p>mini nav menu</p>
-          <h1>{destinations[0].name}</h1>
-          <p>{destinations[0].description}</p>          
-        </div>
-
-        <hr></hr>
-
-        <div className="destination-blurb-bottom">
-          <div className="avg-distance">
-            <p>AVG. DISTANCE</p>
-            <p>{destinations[0].distance}</p>
+        <div className="destination-blurb-sub">
+          <div className="destination-blurb-top">
+            <div className="destination-nav subheading-2">
+              <p>MOON</p>
+              <p>MARS</p>
+              <p>EUROPA</p>
+              <p>TITAN</p>
+            </div>
+            <p className="heading-2">{destinations[0].name.toUpperCase()}</p>
+            <p className="body-text lavender">{destinations[0].description}</p>          
           </div>
-          <div className="est-travel-time">
-            <p>EST. TRAVEL TIME</p>
-            <p>{destinations[0].travel}</p>
+
+          <hr></hr>
+
+          <div className="destination-blurb-bottom">
+            <div className="avg-distance">
+              <p className="subheading-2 lavender">AVG. DISTANCE</p>
+              <p className="heading-4 white">{destinations[0].distance.toUpperCase()}</p>
+            </div>
+            <div className="est-travel-time">
+              <p className="subheading-2 lavender">EST. TRAVEL TIME</p>
+              <p className="heading-4 white">{destinations[0].travel.toUpperCase()}</p>
+            </div>
           </div>
         </div>
       </div>

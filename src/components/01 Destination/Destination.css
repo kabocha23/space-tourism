@@ -9,12 +9,83 @@
     color: #FFFFFF;
 }
 
+/* left half */
 .destination-img {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
     width: 50%;
+    min-width: 500px;
     margin-top: auto;
 }
+.destination-img p {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 0%;
+}
 
-.destination-blurb {
-    width: 50%;
+.destination-img img {
+    height: 500px;
+    width: 500px;
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+/* right half */
+.destination-blurb {
+    height: 80%;
+    width: 50%;
+    min-width: 500px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destination-blurb-sub {
+    height: auto;
+    width: 450px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destination-nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+.destination-nav p {
+    cursor: pointer;
+    margin-right: 35px;
+}
+.destination-blurb p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* divider */
+hr {
+    height: 0.5px;
+    width: 100%;
+    background-color: #d0d6f979;
+    border: none;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+/* divider */
+
+.destination-blurb-bottom {
+    display: flex;
+    flex-direction: row;
+}
+.avg-distance {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.est-travel-time {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
