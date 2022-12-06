@@ -20,8 +20,13 @@
 }
 .destination-img p {
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-bottom: 0%;
+}
+.destination-img span {
+    font-weight: 700;
+    color: #707070;
+    margin-right: 20px;
 }
 
 .destination-img img {
@@ -49,6 +54,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .destination-nav {
     display: flex;
     flex-direction: row;
@@ -57,6 +63,14 @@
 .destination-nav p {
     cursor: pointer;
     margin-right: 35px;
+    padding: 10px 0px;
+    border-bottom: solid #ffffff00;
+}
+.destination-nav p:hover:not(.active) {
+    border-bottom: solid #FFFFFF;
+}
+.destination-nav p.active {
+    border-bottom: solid #FFFFFF;
 }
 .destination-blurb p {
     margin-top: 1%;

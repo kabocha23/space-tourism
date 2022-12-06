@@ -18,7 +18,10 @@ const Destination: FC<DestinationProps> = ({ destinations }) => {
 
       <div className="destination-img">      
         <p className="heading-5"><span>01</span> PICK YOUR DESTINATION</p>
-        <img src={require(`../../${destinations[0].images.png}.png`)}/>
+        <img 
+          src={require(`../../${destinations[0].images.png}.png`)}
+          alt={destinations[0].name}
+          />
       </div>
 
       <div className="destination-blurb">
