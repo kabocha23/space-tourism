@@ -30,7 +30,7 @@
     border-bottom: solid #ffffff00;
 }
 .navbar-container ul li a:hover:not(.active) {
-    border-bottom: solid #FFFFFF;
+    border-bottom: solid #858585;
 }
 .navbar-container ul li a.active {
     border-bottom: solid #FFFFFF;

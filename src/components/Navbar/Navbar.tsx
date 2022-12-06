@@ -1,6 +1,6 @@
 import React, { FC } from "react";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
-
 
 const Navbar: FC = () => {
 
@@ -8,24 +8,24 @@ const Navbar: FC = () => {
     <div className="navbar-container">
       <ul>
         <li>
-          <a href="http://localhost:3000/">
+          <NavLink to="/">
             <span className="nav-bold-nums">00</span> HOME
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="http://localhost:3000/destination">
+          <NavLink to="/destination">
             <span className="nav-bold-nums">01</span> DESTINATION
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="http://localhost:3000/crew">
+          <NavLink to="/crew">
             <span className="nav-bold-nums">02</span> CREW
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="http://localhost:3000/technology">
+          <NavLink to="/technology">
             <span className="nav-bold-nums">03</span> TECHNOLOGY
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>
