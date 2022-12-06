@@ -66,12 +66,10 @@
     padding: 10px 0px;
     border-bottom: solid #ffffff00;
 }
-.destination-nav p:hover:not(.active) {
+.destination-nav p:hover {
     border-bottom: solid #FFFFFF;
 }
-.destination-nav p.active {
-    border-bottom: solid #FFFFFF;
-}
+
 .destination-blurb p {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -102,4 +100,11 @@ hr {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+.activeOn {
+    border-bottom: solid #FFFFFF!important;
+}
+.activeOff {
+    border-bottom: none;
 }

@@ -35,10 +35,10 @@ const Destination: FC<DestinationProps> = ({ destinations, planet, setPlanet }) 
         <div className="destination-blurb-sub">
           <div className="destination-blurb-top">
             <div className="destination-nav subheading-2">
-              <p onClick={() => changePlanet(0)}>MOON</p>
-              <p onClick={() => changePlanet(1)}>MARS</p>
-              <p onClick={() => changePlanet(2)}>EUROPA</p>
-              <p onClick={() => changePlanet(3)}>TITAN</p>
+              <p onClick={() => changePlanet(0)} className={planet===0?"activeOn":"activeOff"}>MOON</p>
+              <p onClick={() => changePlanet(1)} className={planet===1?"activeOn":"activeOff"}>MARS</p>
+              <p onClick={() => changePlanet(2)} className={planet===2?"activeOn":"activeOff"}>EUROPA</p>
+              <p onClick={() => changePlanet(3)} className={planet===3?"activeOn":"activeOff"}>TITAN</p>
             </div>
             <p className="heading-2">{destinations[`${planet}`].name.toUpperCase()}</p>
             <p className="body-text lavender">{destinations[`${planet}`].description}</p>          
