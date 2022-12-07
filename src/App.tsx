@@ -7,6 +7,8 @@ import './App.css';
 const App: FC = () => {
 
   const [planet, setPlanet] = useState(0);
+  const [crewMember, setCrewMember] = useState(0);
+  const [tech, setTech] = useState(0);
 
   return (
     <div className='App'>
@@ -18,6 +20,10 @@ const App: FC = () => {
         technology={data.technology}
         planet={planet}
         setPlanet={setPlanet}
+        crewMember={crewMember}
+        setCrewMember={setCrewMember}
+        tech={tech}
+        setTech={setTech}
       />
     </div>
   );
