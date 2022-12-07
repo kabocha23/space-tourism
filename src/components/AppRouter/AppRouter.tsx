@@ -37,7 +37,19 @@ interface Props {
   setTech: (techIdx: number) => void;
 };
 
-const AppRouter: FC<Props> = ({ home, destinations, crew, technology, planet, setPlanet, crewMember, setCrewMember, tech, setTech }) => {
+const AppRouter: FC<Props> = ({ 
+  home, 
+  destinations, 
+  crew, 
+  technology, 
+  planet, 
+  setPlanet, 
+  crewMember, 
+  setCrewMember, 
+  tech, 
+  setTech 
+}) => {
+  
   return (
     <div className="approuter-container">
         <Routes>
