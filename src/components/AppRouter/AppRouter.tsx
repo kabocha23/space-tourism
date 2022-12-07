@@ -31,9 +31,13 @@ interface Props {
   }[];
   planet: number;
   setPlanet: (planetIdx: number) => void;
+  crewMember: number;
+  setCrewMember: (crewIdx: number) => void;
+  tech: number;
+  setTech: (techIdx: number) => void;
 };
 
-const AppRouter: FC<Props> = ({ home, destinations, crew, technology, planet, setPlanet }) => {
+const AppRouter: FC<Props> = ({ home, destinations, crew, technology, planet, setPlanet, crewMember, setCrewMember, tech, setTech }) => {
   return (
     <div className="approuter-container">
         <Routes>
@@ -53,11 +57,23 @@ const AppRouter: FC<Props> = ({ home, destinations, crew, technology, planet, se
             />
             <Route 
               path="/crew" 
-              element={<Crew crew={crew}/>} 
+              element={
+                <Crew 
+                  crew={crew}
+                  crewMember={crewMember}
+                  setCrewMember={setCrewMember}
+                />
+              } 
             />
             <Route 
               path="/technology" 
-              element={<Technology technology={technology} />} 
+              element={
+                <Technology 
+                  technology={technology}
+                  tech={tech}
+                  setTech={setTech}
+                />
+              } 
             />
         </Routes>
     </div>
