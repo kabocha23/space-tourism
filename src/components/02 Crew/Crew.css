@@ -9,12 +9,78 @@
     color: #FFFFFF;
 }
 
+/* crew member profile */
 .crew-blurb {
+    height: 75%;
+    width: 50%;
+    min-width: 500px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crew-blurb-sub {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crew-blurb span {
+    font-weight: 700;
+    margin-right: 20px;
+}
+.crew-heading {
+    margin-bottom: 30%;
+}
+.crew-role {
+    margin-bottom: 0px;
+    letter-spacing: 1px!important;
+}
+.crew-name {
+    margin: 10px 0px 40px 0px;
+}
+.crew-bio {
+    max-width: 450px;
+}
+
+/* change crew member */
+.crew-nav {
+    height: 30px;
+    margin-top: auto;
+}
+.crew-nav button {
+    all: unset;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* highlight nav buttons */
+.crewActiveOn {
+    background-color: #FFFFFF!important;
+}
+.crew-nav button:hover {
+    background-color: #ffffff80!important;
+    backdrop-filter: blur(10px);
+}
+.crewActiveOff {
+    background-color: #ffffff25!important;
+    backdrop-filter: blur(10px);
+}
+
+/* crew member profile picture */
+.crew-img {
+    display: flex;
+    height: 75%;
     width: 50%;
     margin-top: auto;
 }
+.crew-img img {
+    margin-left: auto;
+    margin-right: auto;
 
-.crew-img {
-    width: 50%;
-    margin-top: auto;
 }
