@@ -32,12 +32,19 @@
     border-bottom: solid #ffffff00;
 }
 .navbar-container ul li a:hover:not(.active) {
-    border-bottom: solid #858585;
+    border-bottom: 2px solid #858585;
 }
 .navbar-container ul li a.active {
-    border-bottom: solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .nav-bold-nums {
     font-weight: 700;
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .navbar-container ul {
+        margin-top: 0px;
+        padding-right: 10%;
+    }
 }
