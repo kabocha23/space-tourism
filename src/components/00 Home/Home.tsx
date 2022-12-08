@@ -13,9 +13,9 @@ const Home: FC<HomeProps> = ({ home }) => {
   return (
     <div className="home-container">
       <div className="home-blurb div-flex-center">
-        <p className="heading-5 lavender">{home.intro.toUpperCase()}</p>
-        <p className="heading-1">{home.title.toUpperCase()}</p>
-        <p className="body-text lavender">{home.description}</p>
+        <p className="home-intro heading-5 lavender">{home.intro.toUpperCase()}</p>
+        <p className="home-title heading-1">{home.title.toUpperCase()}</p>
+        <p className="home-desc body-text lavender">{home.description}</p>
       </div>
       <div className="home-explore">
         <div className="home-explore-btn div-flex-center">
