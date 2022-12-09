@@ -165,13 +165,13 @@ hr {
     .destination-img p {
         margin-top: 15%;
         margin-left: 5%;
-        margin-bottom: 0%;
+        margin-bottom: 5%;
     }
     .destination-img img {
         height: auto;
-        width: 50%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        width: 45%;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     .destination-nav {
