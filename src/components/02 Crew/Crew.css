@@ -91,22 +91,38 @@
         background-image: url("../../assets/crew/background-crew-tablet.jpg");
     }
     .crew-img {
-        height: auto;
+        height: 50%;
         width: 100%;
-        min-width: 500px;
-    }
-    .crew-img p {
-        margin-top: 15%;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
     .crew-img img {
-        height: auto;
-        width: 45%;
+        height: 100%;
+        width: auto;
         margin-top: 0%;
         margin-bottom: 0%;
     }
 
+    .crew-blurb {
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        margin-top: 15%;
+    }
+    .crew-blurb-sub {
+        height: auto;
+        width: 100%;
+    }
+    .crew-heading {
+        text-align: left;
+        margin-top: 0%;
+        margin-bottom: 10%;
+    }
+    .crew-description {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .crew-bio {
+        max-width: 100%;
+    }
     .crew-nav {
         justify-content: center;
         margin-bottom: 5%;
@@ -115,9 +131,29 @@
         margin-left: 20px;
         margin-right:20px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .crew-container {
+        flex-direction: column;
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    }
+    .crew-img {
+        height: 50%;
+        width: 100%;
+    }
+    .crew-img img {
+        height: 100%;
+        width: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
     .crew-blurb {
         text-align: center;
+        height: 50%;
         width: 90%;
+        margin-top: 15%;
     }
     .crew-blurb-sub {
         height: auto;
@@ -125,47 +161,16 @@
     }
     .crew-heading {
         text-align: left;
-        margin-top:150px;
+        margin-top: 0%;
         margin-bottom: 10%;
     }
     .crew-description {
         margin-left: auto;
         margin-right: auto;
     }
-    .crew-role {
-        margin-bottom: 0px;
-        letter-spacing: 1px!important;
-    }
-    .crew-name {
-        margin: 10px 0px 40px 0px;
-    }
     .crew-bio {
         max-width: 100%;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .crew-container {
-        flex-direction: column;
-        background-image: url("../../assets/crew/background-crew-mobile.jpg");
-    }
-    .crew-img {
-        height: auto;
-        width: 100%;
-        min-width: 500px;
-    }
-    .crew-img p {
-        margin-top: 15%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-    .crew-img img {
-        height: auto;
-        width: 45%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-
     .crew-nav {
         justify-content: center;
         margin-bottom: 5%;
@@ -174,16 +179,4 @@
         margin-left: 20px;
         margin-right:20px;
     }
-    .crew-blurb {
-        text-align: center;
-        width: 100%;
-    }
-    .crew-blurb-sub {
-        height: auto;
-        width: 75%;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
 }
