@@ -44,7 +44,7 @@ const Destination: FC<DestinationProps> = ({
               <p onClick={() => changePlanet(2)} className={planet===2?"planetActiveOn":"planetActiveOff"}>EUROPA</p>
               <p onClick={() => changePlanet(3)} className={planet===3?"planetActiveOn":"planetActiveOff"}>TITAN</p>
             </div>
-            <p className="heading-2">{destinations[`${planet}`].name.toUpperCase()}</p>
+            <p className="destination-name heading-2">{destinations[`${planet}`].name.toUpperCase()}</p>
             <p className="body-text lavender">{destinations[`${planet}`].description}</p>          
           </div>
 
