@@ -10,40 +10,33 @@
 }
 
 .destination-heading {
-    width: 95%;
-    margin: 20% 0% 0% 0%;
-    margin-left: 5%;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .destination-container-sub {
     display: flex;
-    height: 80%;
+    height: 100%;
+    width: 90%;
+    max-width: 1280px;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* left half */
 .destination-img {
     display: flex;
     flex-direction: column;
-    height: 80%;
-    width: 50%;
-    min-width: 500px;
-    margin-top: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 610px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
 }
-.destination-img p {
-    margin-top: 10%;
-    margin-left: 15%;
-    margin-bottom: 0%;
-}
-.destination-img span {
-    font-weight: 700;
-    margin-right: 20px;
-}
-
 .destination-img img {
-    height: 500px;
-    width: 500px;
+    width: 90%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -52,19 +45,18 @@
 
 /* right half */
 .destination-blurb {
-    height: 80%;
+    display: flex;
+    height: 100%;
     width: 50%;
-    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destination-blurb-sub {
+    max-width: 500px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-}
-.destination-blurb-sub {
-    height: auto;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .destination-nav {
@@ -82,6 +74,9 @@
     border-bottom: solid #858585;
 }
 
+.destination-name {
+    margin-bottom: 5%!important;
+}
 .destination-blurb p {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -184,7 +179,7 @@ hr {
 @media screen and (max-width: 767px) {
     .destination-container {
         flex-direction: column;
-        background-image: url("../../assets/destination/background-destination-tablet.jpg");
+        background-image: url("../../assets/destination/background-destination-mobile.jpg");
     }
     .destination-heading {
         margin-top: 15%;
