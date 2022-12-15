@@ -171,7 +171,7 @@
 @media screen and (max-width: 767px) {
     .technology-container {
         flex-direction: column;
-        background-image: url("../../assets/technology/background-technology-tablet.jpg");
+        background-image: url("../../assets/technology/background-technology-mobile.jpg");
     }
     .technology-heading {
         text-align: left;
