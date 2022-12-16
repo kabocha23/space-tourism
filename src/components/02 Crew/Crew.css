@@ -141,7 +141,8 @@
     }
 
     .crew-img {
-        height: 65%;
+        height: 60%;
+        min-height: auto;
         width: 100%;
     }
     .crew-img img {
