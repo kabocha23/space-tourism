@@ -88,11 +88,13 @@
 .crew-img {
     display: flex;
     height: 100%;
-    /* margin-top: auto; */
 }
 .crew-img img {
     height: 100%;
     margin-left: auto;
+}
+.crew-img hr {
+    display: none;
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
@@ -151,6 +153,9 @@
         margin-right: auto;
         margin-bottom: 0%;
     }
+    .crew-img hr {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -198,7 +203,7 @@
     }
     .crew-name {
         font-size: 34px!important;
-        margin-bottom: 5%;
+        margin-bottom: 1%;
     }
     .crew-bio {
         font-size: 12px!important;
@@ -216,11 +221,21 @@
     }
 
     .crew-img {
+        display: flex;
+        flex-direction: column;
         height: 50%;
         margin-top: 5%;
     }
     .crew-img img {
         height: 100%;
         margin-right: auto;
+    }
+    .crew-img hr {
+        display: block!important;
+        height: 2px!important;
+        width: 90%;
+        border-top: 0.5px solid #d0d6f979;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
