@@ -81,19 +81,44 @@
 @media screen and (max-width: 767px) {
     .home-container {
         flex-direction: column;
-        background-image: url("../../assets/home/background-home-tablet.jpg");
+        background-image: url("../../assets/home/background-home-mobile.jpg");
     }
 
     .home-blurb {
-        width: 50%;
-        min-width: 500px;
-        margin-top: 150px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 20%;
         text-align: center;
     }
-
+    .home-blurb p {
+        width: 90%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .home-intro {
+        font-size: 18px!important;
+    }
+    .home-title {
+        font-size: 80px!important;
+    }
+    .home-desc {
+        font-size: 12px!important;
+    }
 
     .home-explore {
+        height: 80%;
+        width: 50%;
+        min-width: 100%;
+        margin-top: auto;
         margin-left: auto;
         margin-right: auto;
+    }
+    .home-explore button {
+        height: 200px!important;
+        width: 200px!important;
+    }
+    .home-explore button:hover {
+        box-shadow: 0px 0px 0px 50px #8585852a;
     }
 }
