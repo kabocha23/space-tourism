@@ -46,6 +46,7 @@ const Crew: FC<CrewProps> = ({
             src={require(`../../${crew[`${crewMember}`].images.png}.png`)}
             alt={crew[`${crewMember}`].name}
           />
+          <hr></hr>
         </div>
       </div>
     </div>
