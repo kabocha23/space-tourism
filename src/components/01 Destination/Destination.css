@@ -82,7 +82,7 @@
 }
 
 /* divider */
-hr {
+.destination-blurb-sub hr {
     height: 0.5px;
     width: 100%;
     background-color: #d0d6f979;
@@ -171,7 +171,7 @@ hr {
         margin-left: auto;
         margin-right: auto;
     }
-    hr {
+    .destination-blurb-sub hr {
         margin-top: 25px;
         margin-left: 0px;
         margin-bottom: 25px;
@@ -180,13 +180,15 @@ hr {
 
 @media screen and (max-width: 767px) {
     .destination-container {
+        overflow: auto;
         flex-direction: column;
         background-image: url("../../assets/destination/background-destination-mobile.jpg");
     }
     .destination-heading {
-        margin-top: 15%;
-        margin-bottom: 5%;
         text-align: left;
+        margin-top: 20%;
+        margin-bottom: 0px;
+        font-size: 18px!important;
     }
 
     .destination-container-sub {
@@ -197,7 +199,7 @@ hr {
     .destination-img {
         height: 40%;
         width: 100%;
-        min-width: 500px;
+        margin-top: 5%;
     }
     .destination-img p {
         margin-top: 15%;
@@ -208,6 +210,7 @@ hr {
         height: 100%;
         width: auto;
         margin-top: 0%;
+        margin-left: auto;
         margin-bottom: 0%;
     }
 
@@ -226,14 +229,32 @@ hr {
     }
     .destination-blurb-sub {
         height: auto;
-        width: 75%;
+        width: 100%;
+        max-width: 90%;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
-    hr {
+    .destination-blurb-sub hr {
         margin-top: 25px;
         margin-left: 0px;
         margin-bottom: 25px;
+    }
+    .destination-name {        
+        font-size: 50px!important;
+    }
+    .body-text {
+        font-size: 12px!important;
+    }
+    .destination-blurb-bottom {
+        flex-direction: column;
+    }
+    .avg-distance {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .est-travel-time {
+        width: 100%;
+        margin-bottom: 5%;
     }
 }
