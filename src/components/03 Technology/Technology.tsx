@@ -35,7 +35,7 @@ const Technology: FC<TechnologyProps> = ({
               <div className="technology-description">
                 <p className="technology-role subheading-1 lavender">THE TERMINOLOGY...</p>
                 <p className="technology-name heading-3">{technology[`${tech}`].name.toUpperCase()}</p>
-                <p className="technology-desc body-text lavender">{technology[`${tech}`].description}</p>
+                <p className="technology-body body-text lavender">{technology[`${tech}`].description}</p>
               </div>            
             </div>
           </div>
