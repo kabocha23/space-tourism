@@ -154,10 +154,7 @@
     .technology-name {
         margin-bottom: 1%;
     }
-    .technology-bio {
-        max-width: 100%;
-    }
-    .technology-desc {
+    .technology-body {
         max-width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -179,9 +176,10 @@
         background-image: url("../../assets/technology/background-technology-mobile.jpg");
     }
     .technology-heading {
-        text-align: left;
-        margin-top: 15%;
-        margin-bottom: 0%;
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 0px;
+        font-size: 18px!important;
     }
     .technology-container-sub {
         height: 85%;
@@ -212,30 +210,40 @@
         margin-top: 5%;
         margin-left: 0%;
         margin-bottom: 10%;
+        padding: 0px;
     }
     .technology-blurb-sub {
         height: auto;
         width: 100%;
     }
 
-    .technology-name {
-        margin-bottom: 1%;
-    }
-    .technology-bio {
-        max-width: 100%;
-    }
-    .technology-desc {
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .technology-nav {
         flex-direction: row;
         margin: 0px;
         justify-content: center;
     }
     .technology-nav button {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+    .technology-nav button {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .technology-role {
+        font-size: 18px!important;
+    }
+    .technology-name {
+        font-size: 30px!important;
+        margin-bottom: 1%;
+    }
+    .technology-body {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;        
+        font-size: 12px!important;
+        line-height: 20px!important;
     }
 }
