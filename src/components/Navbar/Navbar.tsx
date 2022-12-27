@@ -2,7 +2,16 @@ import React, { FC } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar: FC = () => {
+interface NavbarProps {
+  isNavExpanded: boolean;
+  setIsNavExpanded: (expanded: boolean) => void;
+}
+
+const Navbar: FC<NavbarProps> = ({isNavExpanded, setIsNavExpanded}) => {
+
+  const toggleIsNav = () => {
+    setIsNavExpanded(!isNavExpanded)
+  }
 
   return (
     <div className="navbar-container">
