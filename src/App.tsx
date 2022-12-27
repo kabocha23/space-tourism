@@ -6,13 +6,17 @@ import './App.css';
 
 const App: FC = () => {
 
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [planet, setPlanet] = useState(0);
   const [crewMember, setCrewMember] = useState(0);
   const [tech, setTech] = useState(0);
 
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar 
+        isNavExpanded={isNavExpanded} 
+        setIsNavExpanded={setIsNavExpanded}      
+      />
       <AppRouter 
         home={data.home}
         destinations={data.destinations} 
