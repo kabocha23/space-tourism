@@ -27,7 +27,7 @@
 
 /* crew member profile */
 .crew-blurb {
-    height: calc(100vh-312px);
+    height: auto;
     width: 60%;
     min-width: 500px;
     margin-top: auto;
@@ -104,6 +104,7 @@
     }
     .crew-container-sub {
         flex-direction: column;
+        height: 100%;
     }
 
     .crew-blurb {
@@ -111,17 +112,20 @@
         height: 30%;
         width: 100%;
         margin-top: 0%;
-        margin-bottom: 0%;
-        padding: 0px;
+        margin-bottom: 5%;
+        padding: 0px 0px 5% 0px;
     }
     .crew-blurb-sub {
-        height: auto;
+        height: 100%;
         width: 100%;
     }
     .crew-heading {
         text-align: left;
         margin-top: 15%;
         margin-bottom: 0px;
+    }
+    .crew-name {
+        font-size: 52px!important;
     }
     .crew-description {
         margin-left: 10%;
@@ -131,10 +135,11 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
     .crew-nav {
         justify-content: center;
+        margin-top: 5%;
     }
     .crew-nav p {
         margin-left: 20px;
@@ -143,15 +148,14 @@
 
     .crew-img {
         height: 60%;
-        min-height: auto;
         width: 100%;
     }
     .crew-img img {
         height: 100%;
         width: auto;
-        margin-top: 0%;
+        margin-top: auto;
         margin-right: auto;
-        margin-bottom: 0%;
+        margin-bottom: 0px;
     }
     .crew-img hr {
         display: none;
