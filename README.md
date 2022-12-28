@@ -4,8 +4,8 @@ Written in TypeScript, using React router.
 Desktop previews:<br>
 ![Desktop preview home](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-home.jpeg)
 ![Desktop preview dest](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-destination.jpeg)
-![Desktop preview crew](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-tech.jpeg)
-![Desktop preview tech](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-crew.jpeg)
+![Desktop preview crew](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-crew.jpeg)
+![Desktop preview tech](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-tech.jpeg)
 
 Mobile Previews:<br>
 ![Mobile preview menu](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/mobile-preview-menu.png)
