@@ -8,7 +8,6 @@ Desktop previews:
 ![Desktop preview tech](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-crew.jpeg)
 
 Mobile Previews:
-![Mobile preview home](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/mobile-preview-home.jpeg)
 ![Mobile preview menu](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/mobile-preview-menu.png)
 ![Mobile preview dest](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/mobile-preview-destination.jpeg)
 ![Mobile preview crew](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/mobile-preview-crew.jpeg)
