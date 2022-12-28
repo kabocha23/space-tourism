@@ -113,6 +113,7 @@
         margin-block-end: 0;
         transform: translate3d(100vw, 0, 0);
         transition: transform 0.4s cubic-bezier(0, .52, 0, 1);
+        z-index: 999;
     }
     .nav-menu ul li {
         width: 100%;
