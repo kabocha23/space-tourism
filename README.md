@@ -1,6 +1,8 @@
 A fictional web application for a space tourism company.
 Written in TypeScript, using React router.
 
+A live demo can be viewed here: https://kabocha23.github.io/space-tourism/
+
 Desktop previews:<br>
 ![Desktop preview home](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-home.jpeg)
 ![Desktop preview dest](https://github.com/kabocha23/space-tourism/blob/main/src/assets/preview%20files/desktop-preview-destination.jpeg)
