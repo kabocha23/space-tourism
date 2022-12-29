@@ -17,7 +17,7 @@ const Navbar: FC<NavbarProps> = ({isNavExpanded, setIsNavExpanded}) => {
     <div className="navbar-container">
       <ul className='non-collapsable-nav'>
         <li>
-          <NavLink to="/space-tourism">
+          <NavLink to="/space-tourism/">
             <span className="nav-bold-nums">00</span> HOME
           </NavLink>
         </li>
@@ -48,7 +48,7 @@ const Navbar: FC<NavbarProps> = ({isNavExpanded, setIsNavExpanded}) => {
       <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
         <ul className='collapsable-nav'>
           <li>
-            <NavLink to="/space-tourism">
+            <NavLink to="/space-tourism/">
               <span className="nav-bold-nums">00</span> HOME
             </NavLink>
           </li>
