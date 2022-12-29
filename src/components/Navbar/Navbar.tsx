@@ -17,22 +17,22 @@ const Navbar: FC<NavbarProps> = ({isNavExpanded, setIsNavExpanded}) => {
     <div className="navbar-container">
       <ul className='non-collapsable-nav'>
         <li>
-          <NavLink to="/">
+          <NavLink to="/space-tourism">
             <span className="nav-bold-nums">00</span> HOME
           </NavLink>
         </li>
         <li>
-          <NavLink to="/destination">
+          <NavLink to="/space-tourism/destination">
             <span className="nav-bold-nums">01</span> DESTINATION
           </NavLink>
         </li>
         <li>
-          <NavLink to="/crew">
+          <NavLink to="/space-tourism/crew">
             <span className="nav-bold-nums">02</span> CREW
           </NavLink>
         </li>
         <li>
-          <NavLink to="/technology">
+          <NavLink to="/space-tourism/technology">
             <span className="nav-bold-nums">03</span> TECHNOLOGY
           </NavLink>
         </li>
@@ -48,22 +48,22 @@ const Navbar: FC<NavbarProps> = ({isNavExpanded, setIsNavExpanded}) => {
       <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
         <ul className='collapsable-nav'>
           <li>
-            <NavLink to="/">
+            <NavLink to="/space-tourism">
               <span className="nav-bold-nums">00</span> HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/destination">
+            <NavLink to="/space-tourism/destination">
               <span className="nav-bold-nums">01</span> DESTINATION
             </NavLink>
           </li>
           <li>
-            <NavLink to="/crew">
+            <NavLink to="/space-tourism/crew">
               <span className="nav-bold-nums">02</span> CREW
             </NavLink>
           </li>
           <li>
-            <NavLink to="/technology">
+            <NavLink to="/space-tourism/technology">
               <span className="nav-bold-nums">03</span> TECHNOLOGY
             </NavLink>
           </li>

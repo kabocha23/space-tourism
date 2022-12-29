@@ -54,11 +54,11 @@ const AppRouter: FC<Props> = ({
     <div className="approuter-container">
         <Routes>
             <Route 
-              path="/" 
+              path="/space-tourism" 
               element={<Home home={home}/>} 
             />
             <Route 
-              path="/destination" 
+              path="/space-tourism/destination" 
               element={
                 <Destination 
                   destinations={destinations}
@@ -68,7 +68,7 @@ const AppRouter: FC<Props> = ({
               } 
             />
             <Route 
-              path="/crew" 
+              path="/space-tourism/crew" 
               element={
                 <Crew 
                   crew={crew}
@@ -78,7 +78,7 @@ const AppRouter: FC<Props> = ({
               } 
             />
             <Route 
-              path="/technology" 
+              path="/space-tourism/technology" 
               element={
                 <Technology 
                   technology={technology}
